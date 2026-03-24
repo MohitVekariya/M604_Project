@@ -24,7 +24,13 @@ This project is built as a monolithic full-stack application. The frontend (HTML
    * **Mac/Linux:** `./mvnw spring-boot:run`
 3. The server will initialize on port `8080` (or `8081` if configured otherwise).
 
-### 4. Evaluation Notes & Features
+### 4.Below are my project APIS please run them in POSTMAN
+POST: http://localhost:8080/api/expenses
+GET: http://localhost:8080/api/expenses
+PUT: http://localhost:8080/api/expenses/{id}
+DELETE: http://localhost:8080/api/expenses/{id}
+
+### 5. Evaluation Notes & Features
 To streamline the evaluation process, the following quality-of-life features have been implemented:
 
 * **Automated Data Seeding:** Upon a successful startup, Hibernate will generate the required tables. Immediately following this, a `data.sql` script will execute, utilizing idempotent `INSERT` operations to populate the database with three sample expense records. You will not need to manually input data to test the read operations.
